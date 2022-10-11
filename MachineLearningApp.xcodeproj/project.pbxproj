@@ -13,6 +13,7 @@
 		3651D2A328DD87C5001C8EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3651D2A128DD87C5001C8EA0 /* Main.storyboard */; };
 		3651D2A528DD87C7001C8EA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3651D2A428DD87C7001C8EA0 /* Assets.xcassets */; };
 		3651D2A828DD87C7001C8EA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3651D2A628DD87C7001C8EA0 /* LaunchScreen.storyboard */; };
+		3651D2B028DD886A001C8EA0 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3651D2AF28DD886A001C8EA0 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3651D2A428DD87C7001C8EA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3651D2A728DD87C7001C8EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3651D2A928DD87C7001C8EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3651D2AF28DD886A001C8EA0 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3651D2A428DD87C7001C8EA0 /* Assets.xcassets */,
 				3651D2A628DD87C7001C8EA0 /* LaunchScreen.storyboard */,
 				3651D2A928DD87C7001C8EA0 /* Info.plist */,
+				3651D2AF28DD886A001C8EA0 /* Inceptionv3.mlmodel */,
 			);
 			path = MachineLearningApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3651D2A028DD87C5001C8EA0 /* ViewController.swift in Sources */,
+				3651D2B028DD886A001C8EA0 /* Inceptionv3.mlmodel in Sources */,
 				3651D29C28DD87C5001C8EA0 /* AppDelegate.swift in Sources */,
 				3651D29E28DD87C5001C8EA0 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,11 +294,13 @@
 				DEVELOPMENT_TEAM = HUWL4ZMRCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MachineLearningApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spy on you)";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "See your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +324,13 @@
 				DEVELOPMENT_TEAM = HUWL4ZMRCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MachineLearningApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spy on you)";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "See your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

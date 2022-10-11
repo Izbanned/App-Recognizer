@@ -6,14 +6,73 @@
 //
 
 import UIKit
+import CoreML
+import Vision
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-class ViewController: UIViewController {
-
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    let imagePicker = UIImagePickerController()
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = false
+
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if  let image = info[UIImagePickerController.InfoKey.originalImage] as?  UIImage {
+            imageView.image = image
+            guard let CIImage = CIImage(image: image) else {
+                fatalError("CIImage error")
+            }
+            detect(image: CIImage)
+            
+            
+        }
+        imagePicker.dismiss(animated: true)
+    }
+    
+    
+    
+    func detect(image: CIImage) {
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {  fatalError("Model error") }
+        
+         let request = VNCoreMLRequest(model: model) { (request, error) in
+             guard  let result = request.results as? [VNClassificationObservation] else {  fatalError("result error")
+                 
+             }
+            
+             if let firstResult = result.first {
+                 if firstResult.identifier.contains("dog") {
+                     self.navigationItem.title = "Dog"
+                     
+                 } else {
+                     self.navigationItem.title = "Not dog"
+                 }
+             }
+             
+      }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        do {
+            try handler.perform([request])
+        }
+        catch {
+            print("Error")
+        }
     }
 
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        present(imagePicker, animated: true)
+    }
+    
 
+    
 }
 
