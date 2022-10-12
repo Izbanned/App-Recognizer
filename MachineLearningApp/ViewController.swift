@@ -12,7 +12,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imageView: UIImageView!
     
-    
+    @IBOutlet weak var PhotLibrary: UIBarButtonItem!
+
     let imagePicker = UIImagePickerController()
   
     
@@ -20,7 +21,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
 
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
 
     }
@@ -63,10 +63,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        imagePicker.sourceType = .camera
         present(imagePicker, animated: true)
     }
     
-
+    @IBAction func photoTapped(_ sender: UIBarButtonItem) {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true)
+    }
+    
     
 }
 

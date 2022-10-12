@@ -294,6 +294,7 @@
 				DEVELOPMENT_TEAM = HUWL4ZMRCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MachineLearningApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recognizer;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Spy on you)";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "See your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -324,6 +325,7 @@
 				DEVELOPMENT_TEAM = HUWL4ZMRCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MachineLearningApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recognizer;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Spy on you)";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "See your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
