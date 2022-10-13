@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3640353028F801760014DD89 /* GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3640352F28F801760014DD89 /* GIF.gif */; };
 		3651D29C28DD87C5001C8EA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651D29B28DD87C5001C8EA0 /* AppDelegate.swift */; };
 		3651D29E28DD87C5001C8EA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651D29D28DD87C5001C8EA0 /* SceneDelegate.swift */; };
 		3651D2A028DD87C5001C8EA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651D29F28DD87C5001C8EA0 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3640352F28F801760014DD89 /* GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GIF.gif; sourceTree = "<group>"; };
 		3651D29828DD87C5001C8EA0 /* MachineLearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachineLearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3651D29B28DD87C5001C8EA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3651D29D28DD87C5001C8EA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3640352E28F801460014DD89 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				3640352F28F801760014DD89 /* GIF.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 		3651D28F28DD87C4001C8EA0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		3651D29A28DD87C5001C8EA0 /* MachineLearningApp */ = {
 			isa = PBXGroup;
 			children = (
+				3640352E28F801460014DD89 /* gif */,
 				3651D29B28DD87C5001C8EA0 /* AppDelegate.swift */,
 				3651D29D28DD87C5001C8EA0 /* SceneDelegate.swift */,
 				3651D29F28DD87C5001C8EA0 /* ViewController.swift */,
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3651D2A828DD87C7001C8EA0 /* LaunchScreen.storyboard in Resources */,
+				3640353028F801760014DD89 /* GIF.gif in Resources */,
 				3651D2A528DD87C7001C8EA0 /* Assets.xcassets in Resources */,
 				3651D2A328DD87C5001C8EA0 /* Main.storyboard in Resources */,
 			);
